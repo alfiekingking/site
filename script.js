@@ -1,7 +1,7 @@
 // script.js — xvr's stock 1:1 (dynamic content + interactions)
 
 document.addEventListener('DOMContentLoaded', () => {
-  const DISCORD = 'https://discord.gg/eyjMuPmmGb';
+  const DISCORD = 'https://discord.gg/ZzWjddrme';
   const PRICE_PER_1K = 3;
 
   // ----- packages data -----
