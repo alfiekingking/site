@@ -1,82 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>xevr stock · Robux</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>xvr's stock — Cheap Robux at $3 / 1K</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <!-- CSS (separate file) -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Font (optional, clean sans) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page-wrapper">
-
-    <!-- header / nav -->
+  <div id="app">
+    <!-- HEADER (sticky) -->
     <header class="header">
-      <div class="logo">xvr's stock</div>
-      <nav class="nav-links">
-        <a href="#">Pricing</a>
-        <a href="#">Payments</a>
-        <a href="#">How it works</a>
-        <a href="#">FAQ</a>
-      </nav>
-      <a href="https://discord.gg/eyjMuPmmGb" target="_blank" class="buy-now-btn">Buy now</a>
+      <div class="header-inner">
+        <a href="#top" class="logo">
+          <span class="logo-dot"></span>
+          xvr's <span class="logo-highlight">stock</span>
+        </a>
+        <nav class="nav">
+          <a href="#pricing">Pricing</a>
+          <a href="#payments">Payments</a>
+          <a href="#how">How it works</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <a href="https://discord.gg/eyjMuPmmGb" target="_blank" rel="noopener noreferrer" class="btn-primary">Buy now</a>
+      </div>
     </header>
 
-    <!-- main hero -->
-    <main class="hero">
-      <div class="badge">
-        <span class="dot"></span> IN STOCK · INSTANT DELIVERY
-      </div>
-
-      <h1 class="hero-title">Cheap <span class="highlight">Robux.</span></h1>
-      <p class="hero-sub">Fast. Trusted. Cheap.</p>
-
-      <div class="price-block">
-        <span class="price-tag">Get Robux at just <strong>$3 per 1,000</strong></span>
-        <span class="payment-badge">All payment methods accepted.</span>
-      </div>
-
-      <p class="delivery-note">Delivered straight to your account through our Discord.</p>
-
-      <div class="cta-group">
-        <a href="https://discord.gg/eyjMuPmmGb" target="_blank" class="cta-discord">Buy on Discord →</a>
-        <a href="#" class="cta-pricing">View pricing</a>
-      </div>
-
-      <!-- stats row -->
-      <div class="stats-grid">
-        <div class="stat-item">
-          <span class="stat-number">2K+</span>
-          <span class="stat-label">trusted customers</span>
+    <main>
+      <!-- HERO -->
+      <section id="top" class="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            In stock · Instant delivery
+          </div>
+          <h1 class="hero-title">
+            Cheap Robux.<br />
+            <span class="hero-highlight">Fast. Trusted. Cheap.</span>
+          </h1>
+          <p class="hero-desc">
+            Get Robux at just <strong>$3 per 1,000</strong>.
+            All payment methods accepted. Delivered straight to your account through our Discord.
+          </p>
+          <div class="hero-actions">
+            <a href="https://discord.gg/eyjMuPmmGb" target="_blank" rel="noopener noreferrer" class="btn-hero">Buy on Discord →</a>
+            <a href="#pricing" class="btn-ghost">View pricing</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-number">$3</span><span class="stat-label">per 1K Robux</span></div>
+            <div class="stat"><span class="stat-number">&lt;5min</span><span class="stat-label">avg delivery</span></div>
+            <div class="stat"><span class="stat-number">100%</span><span class="stat-label">safe & legit</span></div>
+          </div>
         </div>
-        <div class="stat-item">
-          <span class="stat-number">$3</span>
-          <span class="stat-label">per 1K Robux</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number">&lt;5min</span>
-          <span class="stat-label">avg delivery</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">safe & legit</span>
-        </div>
-      </div>
+      </section>
 
-      <!-- trustline -->
-      <div class="trustline">
-        Trusted by <span class="trust-highlight">2,0o0+</span> happy buyers
-      </div>
+      <!-- PRICING -->
+      <section id="pricing" class="section">
+        <div class="section-header">
+          <span class="section-tag">Pricing</span>
+          <h2 class="section-title">Pick your stack</h2>
+          <p class="section-sub">Flat rate. No hidden fees. $3 per 1,000 Robux.</p>
+        </div>
+        <div class="pricing-grid" id="pricing-grid">
+          <!-- packages injected by JS -->
+        </div>
+        <!-- Custom amount -->
+        <div class="custom-card" id="custom-card">
+          <div class="custom-left">
+            <div class="custom-label">Custom amount</div>
+            <input type="range" id="custom-range" min="500" max="100000" step="500" value="1000" />
+            <div class="custom-range-labels">
+              <span>500</span><span>100,000</span>
+            </div>
+          </div>
+          <div class="custom-right">
+            <div class="custom-robux" id="custom-robux">1,000 <span>R$</span></div>
+            <div class="custom-price" id="custom-price">$3.00</div>
+          </div>
+          <a href="https://discord.gg/eyjMuPmmGb" target="_blank" rel="noopener noreferrer" class="btn-primary custom-order">Order now</a>
+        </div>
+      </section>
+
+      <!-- PAYMENTS -->
+      <section id="payments" class="section">
+        <div class="section-header">
+          <span class="section-tag">Payments</span>
+          <h2 class="section-title">We accept everything</h2>
+          <p class="section-sub">Pay your way. Crypto, cards, e-wallets, bank transfers, gift cards — if it moves money, we take it.</p>
+        </div>
+        <div class="payment-grid" id="payment-grid">
+          <!-- injected by JS -->
+        </div>
+        <p class="payment-note">Don't see your method? Ask in Discord — we probably take it.</p>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section id="how" class="section">
+        <div class="section-header">
+          <span class="section-tag">How it works</span>
+          <h2 class="section-title">Three steps. Done.</h2>
+        </div>
+        <div class="steps-grid" id="steps-grid">
+          <!-- injected by JS -->
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section faq-section">
+        <div class="section-header">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Common questions</h2>
+        </div>
+        <div class="faq-list" id="faq-list">
+          <!-- injected by JS -->
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-section">
+        <div class="cta-card">
+          <div class="cta-glow"></div>
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to stock up?</h2>
+            <p class="cta-desc">Join our Discord and place your order in under a minute.</p>
+            <a href="https://discord.gg/eyjMuPmmGb" target="_blank" rel="noopener noreferrer" class="btn-hero cta-btn">Join the Discord →</a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- subtle footer / extra link -->
+    <!-- FOOTER -->
     <footer class="footer">
-      <span>© xevr stock · Robux marketplace</span>
-      <span class="footer-discord">⚡ <a href="https://discord.gg/eyjMuPmmGb" target="_blank">Discord</a></span>
+      <div class="footer-inner">
+        <div class="footer-left">
+          <span class="footer-dot"></span>
+          xvr's stock — © <span id="year"></span>
+        </div>
+        <a href="https://discord.gg/eyjMuPmmGb" target="_blank" rel="noopener noreferrer" class="footer-discord">Discord →</a>
+      </div>
     </footer>
   </div>
 
