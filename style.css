@@ -1,0 +1,354 @@
+/* style.css – xevr stock 1:1 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0c10;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #f0f4fc;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.page-wrapper {
+  max-width: 1100px;
+  width: 100%;
+  background: #12161c;
+  border-radius: 2.5rem;
+  padding: 2rem 2.5rem 1.8rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+  border: 1px solid #2a2f38;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  border-bottom: 1px solid #23282f;
+  padding-bottom: 1.2rem;
+  margin-bottom: 2.2rem;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  background: linear-gradient(145deg, #f0b3ff, #b37bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #b0b9c8;
+}
+
+.nav-links a {
+  color: #b0b9c8;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.buy-now-btn {
+  background: #5865f2;
+  padding: 0.6rem 1.6rem;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: white;
+  text-decoration: none;
+  transition: background 0.15s;
+  border: 1px solid #4752c4;
+}
+
+.buy-now-btn:hover {
+  background: #4752c4;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.badge {
+  background: #1f2937;
+  padding: 0.25rem 1rem;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #b9c8e0;
+  letter-spacing: 0.4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #313a47;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #4ade80;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #4ade80aa;
+}
+
+.hero-title {
+  font-size: 4.2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-top: 0.2rem;
+}
+
+.hero-title .highlight {
+  color: #b37bff;
+  background: linear-gradient(145deg, #d4a0ff, #9a6aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #b7c3d6;
+  letter-spacing: -0.02em;
+  margin-top: -0.2rem;
+}
+
+.price-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.8rem 1.8rem;
+  background: #1b2129;
+  padding: 0.8rem 1.5rem;
+  border-radius: 60px;
+  border: 1px solid #2a313c;
+  margin-top: 0.2rem;
+}
+
+.price-tag {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #eaeef6;
+}
+
+.price-tag strong {
+  font-weight: 800;
+  color: #ffffff;
+  background: #2f3a48;
+  padding: 0.1rem 0.9rem;
+  border-radius: 40px;
+  margin-left: 6px;
+}
+
+.payment-badge {
+  background: #232b36;
+  padding: 0.3rem 1.2rem;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #bcc9dd;
+  border: 1px solid #313d4d;
+}
+
+.delivery-note {
+  font-size: 1rem;
+  color: #9aabbf;
+  margin: 0.25rem 0 0.6rem 0;
+}
+
+.cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.2rem 1.8rem;
+  margin-top: 0.5rem;
+}
+
+.cta-discord {
+  background: #5865f2;
+  padding: 0.9rem 2.8rem;
+  border-radius: 60px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  transition: background 0.15s, transform 0.1s;
+  border: 1px solid #6a77f5;
+  box-shadow: 0 8px 18px -6px #5865f260;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cta-discord:hover {
+  background: #4752c4;
+  transform: scale(1.02);
+}
+
+.cta-pricing {
+  color: #b7c6dd;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 1.5px solid #3b4557;
+  padding-bottom: 2px;
+}
+
+.cta-pricing:hover {
+  color: #ffffff;
+  border-color: #7a8aa8;
+}
+
+/* stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 2rem 3rem;
+  margin-top: 2.4rem;
+  background: #141b23;
+  padding: 1.2rem 2.2rem;
+  border-radius: 60px;
+  border: 1px solid #252e3a;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #8c9db3;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-top: 2px;
+}
+
+.trustline {
+  margin-top: 1.8rem;
+  font-size: 1rem;
+  color: #b3c0d2;
+  background: #1a212a;
+  padding: 0.5rem 1.8rem;
+  border-radius: 60px;
+  border: 1px solid #2b3441;
+  width: fit-content;
+}
+
+.trust-highlight {
+  font-weight: 800;
+  color: #ffffff;
+  background: #2d3847;
+  padding: 0.1rem 0.9rem;
+  border-radius: 40px;
+  margin: 0 4px;
+}
+
+/* footer */
+.footer {
+  margin-top: 2.8rem;
+  border-top: 1px solid #222b35;
+  padding-top: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #7b8ba0;
+  font-size: 0.85rem;
+}
+
+.footer-discord a {
+  color: #889bb5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-discord a:hover {
+  color: #bccfe9;
+}
+
+/* responsive */
+@media (max-width: 780px) {
+  .page-wrapper {
+    padding: 1.5rem;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-sub {
+    font-size: 1.5rem;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    padding: 1.2rem;
+    border-radius: 30px;
+  }
+  .price-block {
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 30px;
+    padding: 0.8rem 1.2rem;
+    width: 100%;
+  }
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .buy-now-btn {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.4rem;
+  }
+  .cta-discord {
+    width: 100%;
+    justify-content: center;
+  }
+  .trustline {
+    width: 100%;
+    text-align: center;
+  }
+}
