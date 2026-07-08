@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const faqs = [
     { q: 'Is this safe and legit?', a: 'Yes. We\'ve completed hundreds of orders with zero issues. Vouches available in our Discord.' },
     { q: 'How long does delivery take?', a: 'Most orders are delivered in under 5 minutes after payment confirms.' },
-    { q: 'What\'s the minimum order?', a: '500 Robux ($1.50). No maximum — we have plenty in stock.' },
+    { q: 'What\'s the minimum order?', a: '500 Robux ($2.05). No maximum — we have plenty in stock.' },
     { q: 'Do you offer refunds?', a: 'Yes, if we can\'t deliver for any reason you get a full refund instantly.' },
   ];
 
