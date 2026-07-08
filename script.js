@@ -1,8 +1,8 @@
 // script.js — xvr's stock 1:1 (dynamic content + interactions)
 
 document.addEventListener('DOMContentLoaded', () => {
-  const DISCORD = 'https://discord.gg/ZzWjddrme';
-  const PRICE_PER_1K = 3;
+  const DISCORD = 'https://discord.gg/dFDWY5BDYS';
+  const PRICE_PER_1K = 4.1;
 
   // ----- packages data -----
   const packages = [
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ----- payment methods -----
   const paymentMethods = [
-    'PayPal', 'CashApp', 'Venmo', 'Zelle', 'Apple Pay', 'Google Pay',
+    'PayPal', 'CashApp', 'Zelle', 'Apple Pay', 'Google Pay',
     'Visa', 'Mastercard', 'Amex', 'Discover', 'Crypto (BTC)', 'Crypto (ETH)',
     'Crypto (LTC)', 'USDT', 'Bank Transfer', 'Gift Cards',
   ];
