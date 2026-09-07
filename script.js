@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const DISCORD = 'https://discord.gg/dFDWY5BDYS';
-  const PRICE_PER_1K = 4.1;
+  const PRICE_PER_1K = 4.8;
 
   // ----- packages data -----
   const packages = [
